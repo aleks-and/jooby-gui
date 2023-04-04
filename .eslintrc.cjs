@@ -53,5 +53,14 @@ module.exports = {
         '@typescript-eslint/object-curly-spacing': ['error', 'never'],
         '@typescript-eslint/comma-dangle': ['error', 'never'],
         '@typescript-eslint/space-before-function-paren': ['error', {anonymous: 'always', named: 'always'}],
+
+        "jsx-quotes": ["error", "prefer-double"],
+        "space-before-function-paren": ["error", "always"],
+        'padding-line-between-statements': [
+            'error',
+            {blankLine: 'always', prev: '*', next: ['directive', 'return', 'export', 'cjs-export', 'try', 'function']},
+            {blankLine: 'always', prev: ['directive', 'export', 'cjs-export', 'try', 'function'], next: '*'},
+            {blankLine: 'any', prev: 'directive', next: 'directive'}
+        ],
     }
 };
